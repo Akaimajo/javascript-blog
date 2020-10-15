@@ -14,22 +14,20 @@ const titleClickHandler = function(event){
   for(let activeLink of activeLinks){
     activeLink.classList.remove('active');
   }
-  /* [DONE-I-HOPE]add class 'active' to the clicked link */
-  event.preventDefault();
-  const clickedElement = this;
+  /* [IN PROGRESS]add class 'active' to the clicked link */
+  // event.preventDefault();
+    const clickedElement = this;
     this.classList.add('active');
     console.log('clickedElement:', clickedElement);
 
   /* [DONE]remove class 'active' from all articles */
-  const activeArticles = document.querySelectorAll('.post article.active');
+  const activeArticle = document.querySelectorAll('.post article.active');
 
   for(let activeArticle of activeArticles){
     activeArticle.classList.remove('active');
   }
-  /* [IN PROGRESS]get 'href' attribute from the clicked link */
-    const articleSelector = this;
-    this = articleSelector.getAttribute(this);
-    console.log('articleSelector', articleSelector);
+  /* get 'href' attribute from the clicked link */
+
   /* find the correct article using the selector (value of 'href' attribute) */
 
   /* add class 'active' to the correct article */
