@@ -49,7 +49,7 @@ const links = document.querySelectorAll('.titles a');
 function generateTitleLinks(){
 
   /* remove contents of titleList */
-  const titleList = document.querySelector('optTitleListSelector');
+  const titleList = document.querySelector('optTitleListSelector')
   innerHTML = '';
   
 

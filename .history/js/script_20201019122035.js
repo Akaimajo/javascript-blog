@@ -49,10 +49,9 @@ const links = document.querySelectorAll('.titles a');
 function generateTitleLinks(){
 
   /* remove contents of titleList */
-  const titleList = document.querySelector('optTitleListSelector');
-  innerHTML = '';
-  
-
+  const titleList = document.querySelector('optTitleListSelector', optTitleListSelector).innerHTML = '';
+  titleList();
+  clearMessages();
   /* for each article */
 
     /* get the article id */

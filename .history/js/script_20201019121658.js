@@ -49,12 +49,14 @@ const links = document.querySelectorAll('.titles a');
 function generateTitleLinks(){
 
   /* remove contents of titleList */
-  const titleList = document.querySelector('optTitleListSelector');
-  innerHTML = '';
+  const titleList = document.querySelector('optTitleListSelector', optTitleListSelector);
+  titleList()
   
-
   /* for each article */
-
+  function clearMessages(){
+    document.getElementById('messages').innerHTML = '';
+    
+  }
     /* get the article id */
 
     /* find the title element */
